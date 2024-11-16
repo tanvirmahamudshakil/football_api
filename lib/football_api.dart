@@ -72,7 +72,7 @@ class FootballApi {
 
   @override
   Future<String?>  getheadtohead({int teamA= 33, int teamB = 34}) async {
-    final version = await methodChannel.invokeMethod<String>('getheadtohead', {"h2h": "${teamA}-${teamB}"});
+    final version = await methodChannel.invokeMethod<String>('getheadtohead', {"h2h": "$teamA-$teamB"});
     return version;
   }
 
